@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Private File
+README_private.md
+.DS_STORE
+.idea

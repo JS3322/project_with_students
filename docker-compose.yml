@@ -1,0 +1,28 @@
+version: '3'
+services:
+  database:
+    #dockerfile is located
+    build: ./database
+    #ports to be opened from the inside = ports to be accessed from the outside
+    ports:
+      - "3306:3306"
+  backend:
+    build: ./backend
+    #external directory to connect to = container internal directory
+    volumes:
+      - ./backend:/usr/src/app
+    ports:
+      - "5000:5000"
+    #environment variable setting
+    environment: 
+      - DBHOST=database
+  frontend:
+    build: ./frontend
+    #external directory to connect to = Container internal directory
+    volumes:
+      - ./frontend:/home/node/app
+    ports:
+      - "8080:8080"
+
+#command
+#docker-compose up
