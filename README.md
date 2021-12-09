@@ -1,24 +1,24 @@
 ```
-Module List
+With Students
 ```
 
 ---
-### Package Architecture
-#### Module Name | Module Explanation | Route
-1. BACKEND | - | -
-2. DATABASE | - | -
-3. FRONTEND | - | -
+- 학생들의 일과 및 상담 내역 정리에 필요한 시스템 구성
 
 ---
-### Log
-2021129 init Docker
+### TODO List | Route
+- [ ] CI/CD init fille or init sh file
 
 ---
-## Stay in touch
+### Import Library
+1. -
+
+---
+### Stay in touch
 - Developer - [JS KIM](https://cleancode.kr)
 
 ---
-## License
+### License
 [MIT licensed](LICENSE)
 
 ---
